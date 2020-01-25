@@ -4,48 +4,96 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>New York City 2019</title>
+    <meta name="apple-mobile-web-app-title" content="New York City 2019">
+    <meta name="application-name" content="New York City 2019">
+    <meta name="msapplication-TileColor" content="#147568">
+    <!--- css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <!--- favicons (NB: /nyc2019)-->
+    <script src="jssource.js"></script>
+    <!--- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest"> 
 </head>
 <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="liberty.svg" width="30" height="30">
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+    </div>
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
-          Home
-        </a>
   
-        <a class="navbar-item">
-           Introduction
+        <a href="intro.html" class="navbar-item">
+            Introduction
         </a>
 
-        <a class="navbar-item">
-           Places
-        </a>
-
-        <a class="navbar-item">
+        <a href="stories.html" class="navbar-item">
             Stories
+        </a>
+
+        <a href="places.html" class="navbar-item">
+            Places
          </a>
 
-        <a class="navbar-item">
+        <a href="exhibits.html" class="navbar-item">
             Exhibits
         </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a href="about.html" class="navbar-item">
+                About
+              </a>
+              <a href="bibliography.html" class="navbar-item">
+                Bibliography
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    </a>
   </nav>
   <body>
-  <section class="section">
-    <div class="container">
+      <!-- background video -->
+  <video autoplay muted loop id="myVideo">
+    <source src="/images/IMG_1826.mov" type="video/mp4">
+  </video>
+  <section class="section" >
+    <div class="container" id="overlay" id="main">
       <h1 class="title">
-        NYC 2k19 woo
+        New York City 2019 Fieldwork Report
       </h1>
       <p class="subtitle">
-        In this essay I will write a <strong>website</strong>.
+        <br>
+        This website looks at places in which narratives of immigration are recounted.
+        <br>
+        It is based on my experiences of visiting six sites in New York in November 2019.
       </p>
+      <p>
+It was produced as coursework for the <i>North American Urban Geographies</i> module in my Geography degree at the University of Nottingham, and is accompanied by a supporting statement, which attempts to justify my decision to make a website instead of writing an essay.
+ 
+      </p>
+      <br>
+      <p class="inline">Throughout the website, additional information can be viewed by clicking the </p><span class="popup" onclick="myFunction()">underlined text<span class="popuptext" id="myPopup">Just like that!</span></span><p class="inline">; click the text again to dismiss it.</p>
+      <br>
+      <br>
+      <a href="intro.html" class="subtitle" id="centred">Begin by exploring the sites visited.</a>
     </div>
   </section>
   </body>
