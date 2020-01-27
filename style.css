@@ -53,6 +53,10 @@ a {
   z-index: 9999;
 }
 
+#ap1998 {
+  width: 30vw;
+}
+
 .popuph1 {
   visibility: hidden;
   width: 500px;
