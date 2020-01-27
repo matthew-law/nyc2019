@@ -71,8 +71,11 @@
   </nav>
   <body>
       <!-- background video -->
-  <video autoplay muted loop id="myVideo">
-    <source src="/images/IMG_1826.mov" type="video/mp4">
+      <div id="vid">
+        <video autoplay muted loop>
+          <source src="/images/IMG_1826.mov" type="video/mp4">
+        </video>
+      </div>
   </video>
   <section class="section" >
     <div class="container" id="overlay" id="main">
@@ -86,11 +89,11 @@
         It is based on my experiences of visiting six sites in New York in November 2019.
       </p>
       <p>
-It was produced as coursework for the <i>North American Urban Geographies</i> module in my Geography degree at the University of Nottingham, and is accompanied by a supporting statement, which attempts to justify my decision to make a website instead of writing an essay.
+It was produced as coursework for the <i>North American Urban Geographies</i> module in my Geography degree at the University of Nottingham, and is accompanied by a <a href="/Supporting Statement.pdf">supporting statement</a>, which attempts to justify my decision to make a website instead of writing an essay.
  
       </p>
       <br>
-      <p class="inline">Throughout the website, additional information can be viewed by clicking the </p><span class="popup" onclick="myFunction()">underlined text<span class="popuptext" id="myPopup">Just like that!</span></span><p class="inline">; click the text again to dismiss it.</p>
+      <p class="inline">Throughout the website, additional information can be viewed by clicking the </p><span class="popup" onclick="myFunction('underlined')">underlined text<span class="popuptext" id="underlined">Just like that!</span></span><p class="inline">; click the text again to dismiss it. In the case of citations, click the citation in the popup to be taken to the full entry on the bibliography page.</p>
       <br>
       <br>
       <a href="intro.html" class="subtitle" id="centred">Begin by clicking here to explore the sites visited.</a>
